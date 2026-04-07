@@ -16,7 +16,7 @@
 </style>
 
 <footer>
-    <p>&copy; <?php echo date("Y"); ?> Budget Tracker System | All Rights Reserved</p>
+    <p>&copy; <?php echo date("Y"); ?> CIT18 Budget Tracker | All Rights Reserved</p>
     <p style="font-style: italic;">Focused on financial stability.</p>
 </footer>
 

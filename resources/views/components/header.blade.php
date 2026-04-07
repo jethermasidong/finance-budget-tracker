@@ -3,62 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Budget Tracker</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        header {
-            background-color: #2c3e50;
-            color: #bdc3c7;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 3px solid #34495e;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 1.2rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        nav a {
-            color: #bdc3c7;
-            text-decoration: none;
-            margin-left: 15px;
-            font-size: 0.9rem;
-        }
-
-        nav a:hover {
-            color: #ecf0f1;
-        }
-
-        .container {
-            padding: 20px;
-            flex: 1;
-        }
-    </style>
+    <title>CIT18 Budget Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-neutral-100 text-neutral-800 font-sans flex flex-col min-h-screen">
 
-<header>
-    <h1>Budget<span>Tracker</span></h1>
-    <nav>
-        <a href="index.php">Dashboard</a>
-        <a href="expenses.php">Expenses</a>
-        <a href="reports.php">Reports</a>
-        <a href="logout.php" style="opacity: 0.7;">Logout</a>
+<header class="bg-neutral-900 text-neutral-400 px-12 py-8 flex justify-between items-center border-b border-neutral-700">
+    <h1 class="text-sm font-semibold tracking-widest uppercase text-neutral-300">CIT18 Budget Tracker</h1>
+    <nav class="flex gap-5 text-sm">
+        <a href="index.php" class="hover:text-neutral-100 transition-colors">Dashboard</a>
+        <a href="expenses.php" class="hover:text-neutral-100 transition-colors">Expenses</a>
+        <a href="reports.php" class="hover:text-neutral-100 transition-colors">Reports</a>
+        <a href="logout.php" class="opacity-50 hover:opacity-100 hover:text-neutral-100 transition-all">Logout</a>
     </nav>
 </header>
 
-<div class="container">
+<div class="p-5 flex-1">
