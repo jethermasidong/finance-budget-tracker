@@ -1,23 +1,10 @@
-</div>
+</main>
 
-<style>
-    footer {
-        background-color: #dee2e6;
-        color: #6c757d;
-        text-align: center;
-        padding: 1.5rem 0;
-        font-size: 0.8rem;
-        border-top: 1px solid #ced4da;
-    }
-
-    footer p {
-        margin: 5px 0;
-    }
-</style>
-
-<footer>
-    <p>&copy; <?php echo date("Y"); ?> Budget Tracker System | All Rights Reserved</p>
-    <p style="font-style: italic;">Focused on financial stability.</p>
+<footer class="bg-gray-200 border-t border-gray-300 py-8 text-center text-xs text-gray-500">
+    <div class="space-y-2">
+        <p>&copy; <?php echo date("Y"); ?> Budget Tracker System | All Rights Reserved</p>
+        <p class="italic font-serif">Focused on financial stability.</p>
+    </div>
 </footer>
 
 </body>

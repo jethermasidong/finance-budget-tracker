@@ -4,61 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget Tracker</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        header {
-            background-color: #2c3e50;
-            color: #bdc3c7;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 3px solid #34495e;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 1.2rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        nav a {
-            color: #bdc3c7;
-            text-decoration: none;
-            margin-left: 15px;
-            font-size: 0.9rem;
-        }
-
-        nav a:hover {
-            color: #ecf0f1;
-        }
-
-        .container {
-            padding: 20px;
-            flex: 1;
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-100 text-gray-800 min-h-screen flex flex-col">
 
-<header>
-    <h1>Budget<span>Tracker</span></h1>
-    <nav>
-        <a href="index.php">Dashboard</a>
-        <a href="expenses.php">Expenses</a>
-        <a href="reports.php">Reports</a>
-        <a href="logout.php" style="opacity: 0.7;">Logout</a>
+<header class="bg-slate-800 text-slate-300 border-b-4 border-slate-700 px-8 py-4 flex justify-between items-center shadow-md">
+    <h1 class="text-xl font-bold tracking-widest uppercase">
+        Budget<span class="text-white">Tracker</span>
+    </h1>
+    <nav class="space-x-6 text-sm font-medium">
+        <a href="index.php" class="hover:text-white transition-colors">Dashboard</a>
+        <a href="expenses.php" class="hover:text-white transition-colors">Expenses</a>
+        <a href="reports.php" class="hover:text-white transition-colors">Reports</a>
+        <a href="logout.php" class="opacity-60 hover:opacity-100 transition-opacity">Logout</a>
     </nav>
 </header>
 
-<div class="container">
+<main class="container mx-auto p-6 flex-grow">
