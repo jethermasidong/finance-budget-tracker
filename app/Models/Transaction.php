@@ -16,5 +16,9 @@ class Transaction extends Model
     'type',
     'category',
     'date',
-];
+    ];
+
+    protected $casts = [
+    'date' => 'datetime'
+    ];
 }
