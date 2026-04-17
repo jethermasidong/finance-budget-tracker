@@ -4,7 +4,9 @@ Final Project for CIT18 - Mastery in Web Technology
 
 The Vision
 ```
-Kwarta is designed for people who find traditional finance apps overwhelming. No complex investment jargon or cluttered spreadsheets, just a clear view of your money so you can spend with confidence and save with intention.
+Kwarta is designed for people who find traditional finance apps overwhelming.
+No complex investment jargon or cluttered spreadsheets,
+just a clear view of your money so you can spend with confidence and save with intention.
 ```
 
 Members:
