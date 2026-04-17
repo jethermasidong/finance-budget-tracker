@@ -12,7 +12,7 @@ use App\Http\Controllers\TransactionController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/transactions', [TransactionController::class, 'index']);
+Route::resource('/transactions', TransactionController::class);
 
 
 
