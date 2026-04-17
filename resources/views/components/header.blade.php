@@ -12,13 +12,24 @@
     <a href="{{ url('/') }}" class="text-xl font-bold tracking-widest uppercase no-underline">
         KWAR<span class="text-xl text-blue-400">TA</span>
     </a>
-    <nav class="space-x-6 text-sm font-medium">
-        <a href="{{ url('/register') }}" class="hover:text-white transition-all duration-200">Signup</a>
-        <a href="{{ url('/login') }}" class="bg-blue-100 px-3 py-1.5 rounded-lg text-black hover:opacity-100 hover:bg-blue-400 transition-all">Login</a>
+ <nav class="space-x-6 text-sm font-medium flex items-center">
+    @auth
+        <a href="{{ route('logout') }}" 
+           onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+           class="bg-red-50 text-red-600 px-3 py-1.5 rounded-lg hover:bg-red-500 hover:text-white transition-all font-bold">
+            Logout
+        </a>
+
         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
             @csrf
         </form>
-    </nav>
+    @endauth
+
+    @guest
+        <a href="{{ url('/register') }}" class="hover:text-blue-500 transition-all duration-200">Signup</a>
+        <a href="{{ url('/login') }}" class="bg-blue-100 px-3 py-1.5 rounded-lg text-black hover:bg-blue-400 transition-all">Login</a>
+    @endguest
+</nav>
 </header>
 
 <main class="container mx-auto p-8 flex-grow">
