@@ -16,17 +16,37 @@
         </a>
     </div>
 
-    <div class="flex gap-6 mb-6">
-        <div class="bg-green-100 p-4 rounded">
-            Income: ₱{{ number_format($totalIncome, 2) }}
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+        <div class="bg-white/70 backdrop-blur-md p-4 rounded-3xl shadow-lg border border-slate-100 flex items-center gap-3">
+            <div class="bg-green-500/10 p-2 rounded-xl">
+                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+            </div>
+            <div>
+                <p class="text-[10px] font-bold text-slate-400 uppercase tracking-tight">Income</p>
+                <p class="text-lg font-black text-slate-800">₱{{ number_format($totalIncome, 2) }}</p>
+            </div>
         </div>
-        <div class="bg-red-100 p-4 rounded">
-            Expense: ₱{{ number_format($totalExpense, 2) }}
+
+        <div class="bg-white/70 backdrop-blur-md p-4 rounded-3xl shadow-lg border border-slate-100 flex items-center gap-3">
+            <div class="bg-red-500/10 p-2 rounded-xl">
+                <svg class="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17h8m0 0v-8m0 8l-8-8-4 4-6-6"></path></svg>
+            </div>
+            <div>
+                <p class="text-[10px] font-bold text-slate-400 uppercase tracking-tight">Expense</p>
+                <p class="text-lg font-black text-slate-800">₱{{ number_format($totalExpense, 2) }}</p>
+            </div>
         </div>
-        <div class="bg-blue-100 p-4 rounded">
-            Balance: ₱{{ number_format($balance, 2) }}
+
+        <div class="bg-slate-900 p-4 rounded-3xl shadow-lg flex items-center gap-3">
+            <div class="bg-white/10 p-2 rounded-xl">
+                <svg class="w-5 h-5 text-indigo-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+            </div>
+            <div>
+                <p class="text-[10px] font-bold text-slate-400 uppercase tracking-tight">Balance</p>
+                <p class="text-lg font-black text-white">₱{{ number_format($balance, 2) }}</p>
+            </div>
         </div>
-    </div>
+    </div>  
 
     <div class="bg-white/70 backdrop-blur-xl rounded-[2.5rem] shadow-2xl border overflow-hidden">
         <table class="w-full text-left border-collapse">
