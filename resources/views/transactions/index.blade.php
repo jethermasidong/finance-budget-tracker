@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<x-header />
 <div class="max-w-6xl mx-auto mt-12 p-6 animate-in fade-in duration-700">
 
     <div class="flex justify-between items-end mb-10">
